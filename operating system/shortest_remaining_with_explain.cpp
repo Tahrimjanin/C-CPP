@@ -16,7 +16,7 @@ int main() {
         process[i] = i + 1;   // assign process ID (P1, P2, P3...)
 
         cout << "Enter arrival time of process " << process[i] << ": ";
-        cin >> arrival[i];    // input arrival time
+        cin >> arrival[i];  // input arrival time
 
         cout << "Enter burst time of process " << process[i] << ": ";
         cin >> burst[i];      // input burst time
