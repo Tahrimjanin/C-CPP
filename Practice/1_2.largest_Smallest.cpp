@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>   
 using namespace std;
 
-int main() {
+int   main() {
 int n , arr[100];
 cin >> n ;
     for (int i = 0; i < n; i++) 
