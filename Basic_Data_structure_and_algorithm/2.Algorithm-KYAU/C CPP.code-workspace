@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ALGO2.2.C": "cpp",
+			"Tree.C": "cpp",
+			"iostream": "cpp"
+		}
+	}
+}

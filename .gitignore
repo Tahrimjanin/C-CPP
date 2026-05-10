@@ -1,0 +1,11 @@
+# VSCode settings
+.vscode/
+
+# Executables
+*.exe
+
+# Temp files
+tempCodeRunnerFile*
+
+# Windows reserved names
+nul
