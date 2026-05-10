@@ -48,12 +48,12 @@ int main() {
     // Calculating Completion Time
     for (i = 0; i < n; i++) {
         if (i == 0) {
-            completion[i] = arrival[i] + execution[i];
+            completion[i] = arrival[i] + execution[i] ;
         } else {
             if (completion[i - 1] > arrival[i]) {
-                completion[i] = completion[i - 1] + execution[i];
+                completion[i] = completion[i - 1] + execution[i] ;
             } else {
-                completion[i] = arrival[i] + execution[i];
+                completion[i] = arrival[i] + execution[i] ;
             }
         }
     }
