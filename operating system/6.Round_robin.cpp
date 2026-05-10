@@ -25,7 +25,7 @@ int main() {
     cout << "Enter Time Quantum: ";
     cin >> tq;
 
-    // ----- Initialization -----
+   
     int time = 0, completed = 0;
     int queue[100], front = 0, rear = 0;
 
@@ -33,7 +33,6 @@ int main() {
     for (i = 0; i < n; i++)
         visited[i] = 0;
 
-    // Add processes that arrive at time = 0
     for (i = 0; i < n; i++) {
         if (arrival[i] == 0) {
             queue[rear++] = i;
