@@ -35,9 +35,9 @@ int main() {
         arrival[pos] = temp;
 
         // Swap execution time
-        temp = execution[i];
-        execution[i] = execution[pos];
-        execution[pos] = temp;
+        temp = execution[i] ;
+        execution[i] = execution[pos] ;
+        execution[pos] = temp ;
 
         // Swap process IDs
         temp = process[i];
