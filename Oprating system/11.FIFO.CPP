@@ -17,7 +17,7 @@ int main() {
     cout << "Enter the total  number of pages: ";
     cin >> n;
 
-    cout << "Enter the number of  frames: ";
+    cout << "Enter the number of frames: ";
     cin >> frame_count;
 
     int pages[n], frames[frame_count];
