@@ -12,7 +12,7 @@ int is_exist(int frames[], int frame_count, int page) {
 }
             
 int main() {
-    int n, frame_count, page_faults = 0, pos = 0;
+    int n, frame_count,page_faults = 0, pos = 0;
 
     cout << "Enter the total number of pages: ";
     cin >> n;
