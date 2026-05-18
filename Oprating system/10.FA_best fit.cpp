@@ -13,9 +13,8 @@ int main() {
     }
     while (1) {
         int size, bestIndex = -1;
-        cout << "\nEnter size needed (0 to exit): ";
+        cout << "\nEnter size needed : ";
         cin >> size;
-
         if (size == 0) break;
 
         // Find the best fitting block (smallest sufficient)

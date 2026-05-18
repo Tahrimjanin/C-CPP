@@ -1,39 +1,41 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
     int n;
-    printf("Enter number of memory blocks: ");
-    scanf("%d", &n);
+    cout << "Enter number of memory blocks: ";
+    cin >> n;
 
     int memory[n];
     for (int i = 0; i < n; i++) {
-        printf("Enter size of block %d: ", i + 1);
-        scanf("%d", &memory[i]);
+        cout << "Enter size of block " << i + 1 << ": ";
+        cin >> memory[i];
     }
 
-    int lastIndex = 0; // Keep track of where we last allocated
+    int lastIndex = 0; 
 
     while (1) {
         int size, allocated = 0;
-        printf("\nEnter size needed (0 to exit): ");
-        scanf("%d", &size);
+        cout << "\nEnter size needed  ";
+        cin >> size;
 
         if (size == 0) break;
 
-        // Start searching from lastIndex
+      
         for (int count = 0; count < n; count++) {
-            int i = (lastIndex + count) % n; // Wrap around
+            int i = (lastIndex + count) % n; // সর্বশেষ যে ব্লকে দিয়েছিলাম সেখান থেকে খোঁজা শুরু করো,
+            // শেষে পৌঁছে গেলে আবার Block 1 থেকে শুরু করো
             if (memory[i] >= size) {
                 memory[i] -= size;
-                printf("Allocated in block %d\n", i + 1);
-                lastIndex = i; // Update lastIndex to current block
+                cout << "Allocated in block " << i + 1 << endl;
+                lastIndex = i; 
                 allocated = 1;
-                break;
+                break ;
             }
         }
 
         if (!allocated)
-            printf("No suitable block found\n");
+            cout << "No suitable block found" << endl;
     }
 
     return 0;

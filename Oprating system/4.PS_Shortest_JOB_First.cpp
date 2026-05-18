@@ -16,12 +16,14 @@ int main() {
         cin >> arrival[i];
         cout << "Enter burst time of process " << process[i] << ": ";
         cin >> burst[i];
+        
         completion[i] = -1; 
     }
+    //sorting 
     for (i = 0; i < n; i++) {
         pos = i;
         for (j = i + 1; j < n; j++) {
-            if (arrival[j] < arrival[pos]) {
+            if (arrival[pos] > arrival[j]) {
                 pos = j;
             }
         }
@@ -37,6 +39,7 @@ int main() {
         temp = process[i];
         process[i] = process[pos];
         process[pos] = temp;
+        
     }
 
     // Apply Shortest Job First (Non-Preemptive)

@@ -14,12 +14,12 @@ int main() {
 
     while (1) {
         int size, allocated = 0;
-        cout << "\nEnter size needed (0 to exit): ";
+        cout << "\nEnter size needed: ";
         cin >> size;
         if (size == 0) break;
         for (int i = 0; i < n; i++) {
-            if (memory[i] >= size) {
-                memory[i] -= size;
+            if (memory[i] >= size) { // If current block has enough space
+                memory[i] -= size; // Subtract used size from the block
                 cout << "Allocated in block " << i + 1 << endl;
                 allocated = 1;
                 break;

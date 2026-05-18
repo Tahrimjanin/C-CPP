@@ -39,7 +39,7 @@ int main() {
             }
         }
 
-        // No process arrived → jump to next arrival time
+        // No process arrived → jump to next arrival time(cpu arrival time bose kina check)
         if (min_index == -1) {
             int next_arrival = 9999;
             for (int i = 0; i < n; i++) {

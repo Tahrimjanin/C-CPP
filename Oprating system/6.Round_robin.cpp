@@ -21,11 +21,9 @@ int main() {
         remaining[i] = burst[i];   // remaining time initially burst time
         completion[i] = 0;         // will calculate later
     }
-
     cout << "Enter Time Quantum: ";
     cin >> tq;
-
-   
+    
     int time = 0, completed = 0;
     int queue[100], front = 0, rear = 0;
 
@@ -39,7 +37,6 @@ int main() {
             visited[i] = 1;
         }
     }
-
     // ----- Round Robin Execution -----
     while (completed < n) {
 
